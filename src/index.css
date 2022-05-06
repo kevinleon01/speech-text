@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+html, body {
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+  max-width: 1100px;
+  min-width: 925px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #97C397;
 }
 
 code {
@@ -13,27 +24,64 @@ code {
 }
 
 .container {
-  margin: 20px;
+  margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .box {
-  box-shadow: -4px 10px 35px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 5px 5px -1px #736F72;
   min-height: 20rem;
+  min-width: 15rem;
+  max-width: 25rem;
   margin: 30px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 7px;
+  background-color: #E9E3E6;
 }
 
 h1 {
-  margin-left: 20px;
+  text-align: center;
+  margin-top: 1em;
+  margin-left: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 1.25rem;
+  color: #303030;
+}
+
+h2 {
+  font-weight: 500;
+  color: #303030;
 }
 
 button {
   float: right;
   margin: 10px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   background: transparent;
+}
+
+button:hover {
+  background-color: #5e5a5d;
+  color:#E9E3E6;
+}
+
+footer {
+  background-color: #5e5a5d;
+  padding: 0 18px 14px 18px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  color: #E9E3E6;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+}
+
+.footerText {
+  margin-top: .5rem;
 }
