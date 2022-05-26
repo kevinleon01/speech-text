@@ -62,10 +62,10 @@ const handleSaveRec = () => {
     <h1>Voice to Text</h1>
     <div className="container">
       <div className="box">
-          <h2>Current Recording</h2>
+          <h2>Recording</h2>
           {isListening ? <span>🎙️ MIC ON</span> : <span>🚫 MIC OFF</span>}
           <button onClick={handleSaveRec} disabled={!rec}> 
-          Save Recording 
+          Save 
           </button>
           <button onClick={() => setIsListening(prevState => !prevState)}>
             Start/Stop

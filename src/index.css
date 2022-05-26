@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Concert+One&family=Fredoka+One&family=PT+Sans+Caption&display=swap');
 
 html, body {
   overscroll-behavior-y: none;
@@ -31,7 +32,11 @@ code {
 }
 
 .box {
-  box-shadow: -1px 5px 5px -1px #736F72;
+  /* box-shadow: -1px 5px 5px -1px #736F72; */
+  /* border: #303030; */
+  border: black;
+  border-style: solid;
+  border-width: 5px;
   min-height: 20rem;
   min-width: 15rem;
   max-width: 25rem;
@@ -43,31 +48,47 @@ code {
 
 h1 {
   text-align: center;
-  margin-top: 1em;
-  margin-left: 2rem;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
+  margin-top: .75em;
+  margin-left: 0rem;
+  font-family: 'Concert One', sans-serif;
+  font-size: 4.25em;
   text-transform: uppercase;
   letter-spacing: 1.25rem;
-  color: #303030;
+  /* color: #303030; */
+  color: black;
 }
 
 h2 {
-  font-weight: 500;
-  color: #303030;
+  font-weight: 700;
+  color: black;
+  /* font-family: 'Pt Sans', sans-serif; */
+  font-size: 1.5em;
 }
 
 button {
   float: right;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 15px;
+  margin: 8px;
+  padding: 11px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
   background: transparent;
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: 3px 5px;
 }
 
 button:hover {
-  background-color: #5e5a5d;
+  background-color: black;
   color:#E9E3E6;
+  border-radius: 10px;
+  box-shadow: 3px 5px;
+}
+
+button:disabled {
+  /* border-color: #5e5a5d;
+  background: transparent; */
+  display: none;
 }
 
 footer {
@@ -78,7 +99,7 @@ footer {
   right: 0;
   position: fixed;
   color: #E9E3E6;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Pt Sans', sans-serif;
   font-weight: bold;
 }
 
