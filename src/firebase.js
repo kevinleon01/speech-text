@@ -5,13 +5,13 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBR-RLfB2gK_ld5vqqhBCN01CmcZeKmytM",
-    authDomain: "speech-text-f091c.firebaseapp.com",
-    databaseURL: "https://speech-text-f091c-default-rtdb.firebaseio.com",
-    projectId: "speech-text-f091c",
-    storageBucket: "speech-text-f091c.appspot.com",
-    messagingSenderId: "803030523855",
-    appId: "1:803030523855:web:598b7908265659f8f47cba"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
 };
 
 const app = initializeApp(firebaseConfig)
